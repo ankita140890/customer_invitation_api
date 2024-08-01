@@ -19,11 +19,11 @@ This endpoint accepts a file containing customer data in JSON lines format and r
 - `file` (required): The `customers.txt` file containing customer data in JSON lines format.
 
 #### Request Example
-
+```
 POST /api/v1/customers
 Content-Type: multipart/form-data
 file: <file content>
-
+```
 
 #### Sample `customers.txt` Content
 
@@ -36,6 +36,7 @@ file: <file content>
 
 #### Response Example: 
 
+```json
 [
   {
     "name": "Aarav Patel",
@@ -50,9 +51,11 @@ file: <file content>
     "user_id": 3
   },
 ]
+```
 
 #### Error Responses:
 
+```json
 {
   "error": "File not provided"
 }
@@ -60,3 +63,4 @@ file: <file content>
 {
   "error": "Invalid JSON format"
 }
+```
