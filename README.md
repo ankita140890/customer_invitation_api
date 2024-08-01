@@ -14,20 +14,25 @@ To get started with the application, follow the instructions below:
 ### Setup
 
 1. Clone the repository
+	```bash
 	git clone https://github.com/ankita140890/customer_invitation_api.git
 	cd customer_invitation_api
-
+	```
+	
 2. Install dependencies:
    ```bash
    bundle install
    ```
 
 3. Run database migrations
+	```bash
 	rails db:migrate
+	```
 
 4. Start the server:
+	```bash
 	rails server
-
+	```
 
 ### API Documentation
 
@@ -36,4 +41,6 @@ For detailed information on the API endpoints, please refer to the [API Document
 ### Running Tests
 
 To run the tests, use the following command:
-	bundle exec rspec
+```bash
+bundle exec rspec
+```
